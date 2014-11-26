@@ -1,0 +1,26 @@
+{
+  "name": "gallerygrid",
+  "version": "0.1.0",
+  "homepage": "https://github.com/herosheets/gallerygrid/",
+  "authors": [
+    "Kyle Kemp <kyle@seiyria.com>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.2.0",
+    "lodash": "~2.4.1",
+    "masonry": "~3.2.1",
+    "classie": "~1.0.1",
+    "modernizr": "~2.8.3",
+    "imagesloaded": "~3.1.8",
+    "gallerygrid": "~0.1.0"
+  }
+}

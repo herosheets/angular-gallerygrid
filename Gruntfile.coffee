@@ -9,6 +9,7 @@ module.exports = (grunt) ->
     coffee:
       dev:
         files:
+          'dist/js/index.js': ['test/**/*.coffee']
           'dist/js/angular-gallerygrid.js': ['src/**/*.coffee']
 
     uglify:
@@ -69,7 +70,7 @@ module.exports = (grunt) ->
   #### Misc (automated testing using watch)
     watch:
       autoreload:
-        files: ['src/**/*', 'package.json']
+        files: ['src/**/*', 'test/**/*', 'package.json']
         tasks: ['build']
         options:
           livereload: yes

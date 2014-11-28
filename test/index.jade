@@ -1,11 +1,10 @@
 doctype html
-html(lang="en")
+html(lang="en", ng-app="test")
     head
         title Herosheets Gallery
         link(href="./css/lib.css",rel="stylesheet")
-        link(href="./css/index.css",rel="stylesheet")
-    body
-        #grid-gallery.grid-gallery
+    body(ng-controller="test")
+        #grid-gallery.grid-gallery(gallerygrid)
             section.grid-wrap
                 ul.grid
                     li.grid-sizer
@@ -101,4 +100,5 @@ html(lang="en")
                     span.nav-close.fa.fa-fw.fa-remove
                 .info-keys.icon Navigate with arrow keys
         script(src="./js/lib.js")
+        script(src="./js/angular-gallerygrid.js")
         script(src="./js/index.js")

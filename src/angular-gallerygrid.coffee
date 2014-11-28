@@ -1,6 +1,9 @@
 
 angular.module 'hs.gallerygrid', []
-  .directive 'gallerygrid', ->
+  .directive 'gallerygrid', ['$timeout', ($timeout) ->
     restrict: 'A'
     link: (scope, element, attrs) ->
-      scope.gallerygrid = new GalleryGrid element[0]
+      $timeout ->
+        scope.gallerygrid = new GalleryGrid element[0]
+      , 1000
+  ]

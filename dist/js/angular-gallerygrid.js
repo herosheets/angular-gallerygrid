@@ -3,7 +3,7 @@
     return {
       restrict: 'A',
       link: function(scope, element, attrs) {
-        return new GalleryGrid(element[0]);
+        return scope.gallerygrid = new GalleryGrid(element[0]);
       }
     };
   });
